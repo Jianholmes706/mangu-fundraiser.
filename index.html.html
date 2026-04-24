@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mang'u High School Education Fund</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--primary:#0b2a5b;--accent:#f4b400;--bg:#f5f7fb;--text:#1f2937}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Poppins, Arial, sans-serif;background:var(--bg);color:var(--text)}
+    header{background:linear-gradient(135deg,var(--primary),#123a80);color:#fff;padding:18px 20px;position:sticky;top:0;z-index:10}
+    .nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+    .nav a{color:#fff;text-decoration:none;margin:0 10px;font-weight:600}
+    .hero{background:url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1') center/cover no-repeat;color:#fff;text-align:center;padding:100px 20px}
+    .hero h1{font-size:2.4rem;margin-bottom:10px}
+    .hero p{max-width:700px;margin:auto;margin-bottom:20px}
+    .btn{background:var(--accent);border:none;padding:14px 22px;border-radius:8px;font-weight:700;cursor:pointer}
+    .section{max-width:1100px;margin:auto;padding:50px 20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+    .card{background:#fff;padding:20px;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+    .card img{width:100%;border-radius:10px}
+    .progress{background:#e5e7eb;border-radius:20px;overflow:hidden}
+    .progress-bar{height:16px;background:var(--accent);width:35%}
+    .donate-box{background:#fff;padding:25px;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,.1);text-align:center}
+    footer{background:var(--primary);color:#fff;text-align:center;padding:20px}
+    .badge{display:inline-block;background:#e8f0ff;color:#123a80;padding:6px 10px;border-radius:999px;font-size:12px;margin-bottom:10px}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div><strong>Mang'u Education Fund</strong></div>
+    <div>
+      <a href="#impact">Impact</a>
+      <a href="#students">Sponsor</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#donate">Donate</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Raise a Future. Fund a Dream.</h1>
+  <p>Join alumni, parents, and well-wishers in supporting bright but financially challenged students at Mang'u High School.</p>
+  <button class="btn" onclick="donate()">Donate Now</button>
+</section>
+
+<section class="section" id="impact">
+  <span class="badge">Transparency</span>
+  <h2>Fundraising Progress</h2>
+  <p>KSh 350,000 raised of KSh 1,000,000 goal</p>
+  <div class="progress"><div class="progress-bar"></div></div>
+</section>
+
+<section class="section">
+  <h2>Why Your Support Matters</h2>
+  <div class="grid">
+    <div class="card"><h3>Access to Education</h3><p>Keep talented students in school regardless of financial hardship.</p></div>
+    <div class="card"><h3>Strong Alumni Network</h3><p>Backed by generations of leaders making real impact.</p></div>
+    <div class="card"><h3>Proven Excellence</h3><p>Consistent top performance and all-round development.</p></div>
+  </div>
+</section>
+
+<section class="section" id="students">
+  <h2>Sponsor a Student</h2>
+  <div class="grid">
+    <div class="card"><h3>Partial Support</h3><p>KSh 10,000 supports learning materials.</p><button class="btn" onclick="donate()">Sponsor</button></div>
+    <div class="card"><h3>Half Scholarship</h3><p>KSh 30,000 supports a term.</p><button class="btn" onclick="donate()">Sponsor</button></div>
+    <div class="card"><h3>Full Scholarship</h3><p>KSh 90,000 supports a full year.</p><button class="btn" onclick="donate()">Sponsor</button></div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <h2>Life at Mang'u</h2>
+  <div class="grid">
+    <div class="card"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914"><p>Modern Classrooms</p></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc"><p>Laboratories</p></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7"><p>Library</p></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94"><p>Student Life</p></div>
+  </div>
+</section>
+
+<section class="section" id="donate">
+  <div class="donate-box">
+    <h2>Make a Donation</h2>
+    <p>Use M-Pesa or WhatsApp to contribute instantly.</p>
+    <button class="btn" onclick="donate()">Donate via M-Pesa</button>
+    <br><br>
+    <a href="https://wa.me/254700000000" target="_blank">
+      <button class="btn">Donate via WhatsApp</button>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>Email: support@mangu-edu.org | Phone: +254 700 000000</p>
+</footer>
+
+<script>
+function donate(){
+  alert("Send via M-Pesa Paybill: 123456\nAccount: EDUCATION FUND");
+}
+</script>
+
+</body>
+</html>
